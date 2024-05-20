@@ -1,0 +1,87 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+nav a,
+#hero-msg h1,
+#hero-msg h4,
+.button-box,
+main section {
+    text-align: center;
+}
+
+
+#background {
+    height: 725px;
+}
+
+
+body {
+    background-color: #fcfbfb;
+}
+header {
+    background-color: rgba(20, 30, 13, 0.7);
+}
+nav a:hover {
+    background-color: black;
+}
+#background {
+    background-color: blueviolet;
+}
+.msg {
+    background-color: darkolivegreen;
+}
+footer {
+    background-color: darkolivegreen;
+}
+
+
+nav a,
+nav a:hover, 
+.home-title,
+h4,
+.join,
+.msg h2,
+.msg p,
+footer,
+footer a,
+footer a:hover {
+    color: burlywood;
+}
+
+.book:hover{
+    background-color: black;
+}
+
+
+.icon {
+    width: 80px;
+}
+#hero-img {
+    width: 100%;
+}
+
+nav a,
+.book,
+.join,
+footer a {
+    text-decoration: none;
+}
+
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+
+footer p {
+    font-size: 1.5em;
+}
