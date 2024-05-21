@@ -3,12 +3,10 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl,
     padding: 0;
 }
 
-
 #content {
     max-width: 1600px;
     margin: 0 auto;
 }
-
 
 nav a,
 #hero-msg h1,
@@ -18,11 +16,9 @@ main section {
     text-align: center;
 }
 
-
 #background {
     height: 725px;
 }
-
 
 body {
     background-color: #fcfbfb;
@@ -43,7 +39,6 @@ footer {
     background-color: darkolivegreen;
 }
 
-
 nav a,
 nav a:hover, 
 .home-title,
@@ -57,14 +52,14 @@ footer a:hover {
     color: burlywood;
 }
 
-.book:hover{
+.book:hover {
     background-color: black;
 }
-
 
 .icon {
     width: 80px;
 }
+
 #hero-img {
     width: 100%;
 }
@@ -76,12 +71,14 @@ footer a {
     text-decoration: none;
 }
 
-
 footer p a:hover {
     text-decoration: underline;
 }
 
-
 footer p {
     font-size: 1.5em;
+}
+
+.logo {
+    width: 80px;
 }
