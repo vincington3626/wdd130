@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.picture {
+    margin-bottom: 0;
+}
+
+#imagesbox {
+    padding: 2%;
+    background-color: rgb(115, 115, 115);
+    place-items: center;
+}
+
+div.circlesbox {
+    text-align: center;
+}
+
+img.circle {
+    width: 20%;
+    border-radius: 50%;
+    border: 10px solid rgb(68, 68, 68);
+}
+
+.circle {
+    margin: 50px; 
+}
