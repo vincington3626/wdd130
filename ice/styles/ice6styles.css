@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-container>div {
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.greybox {
+    background-color: grey;
+    grid-column: 2 / 4;
+    grid-row: 1/3;
+    z-index: 1;
+}
+
+.cherries {
+    grid-column: 2 / 4;
+    grid-row: 2/3;
+    font-size: 120px;
+    text-align: center;
+    z-index: 2;
+    color: rgb(122, 0, 0);
+
+}
+
+.image {
+    grid-column: 1 / 3;
+    grid-row: 1/3;
+    z-index: 1;
+}
+
+.text1 {
+    font-size: 350px;
+    font-weight: normal;
+    grid-column: 1/4;
+    grid-row: 1/4;
+    text-align: center;
+    z-index: 10;
+}
