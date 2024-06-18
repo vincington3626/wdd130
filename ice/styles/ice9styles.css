@@ -1,0 +1,53 @@
+body{
+    background-color: black;
+}
+.card{
+    width: 250px;
+    margin: 0 auto;
+    background-color: white;
+}
+.headerimage{
+    width: 100%;
+}
+.awesomearticle{
+    padding: 10%;
+    text-align: center;
+    color: grey;
+}
+.subheading, .heading{
+    text-align: center;
+}
+
+.subheading{
+    color: #5b749c;
+}
+.info-boxes {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    margin: 20px auto;
+    border: 1px solid white;
+}
+
+.box {
+    flex: 1;
+    background-color: #5b749c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-right: 1px solid white;
+}
+
+.box:last-child {
+    border-right: none;
+}
+
+.box h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.box p {
+    margin: 5px 0;
+    font-size: 14px;
+}
