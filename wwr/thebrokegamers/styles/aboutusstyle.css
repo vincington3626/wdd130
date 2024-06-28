@@ -78,14 +78,8 @@ p {
   margin-bottom: 20px;
 }
 
-/* Styles for images */
-.welcome-section img {
-  display: block;
-  margin: 20px auto; /* Center images and add margin */
-  max-width: 80%; /* Ensure images don't exceed container width */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for better visibility */
+ul {
+  margin-bottom: 20px;
 }
 
 footer {
@@ -105,6 +99,25 @@ footer {
 
 .social img {
   width: 40px; /* Adjust size as needed */
+}
+
+/* Images */
+.about-image {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shop-image {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive Design */

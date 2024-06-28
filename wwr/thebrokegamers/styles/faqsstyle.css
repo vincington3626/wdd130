@@ -78,14 +78,12 @@ p {
   margin-bottom: 20px;
 }
 
-/* Styles for images */
-.welcome-section img {
+/* Adjust images */
+main img {
   display: block;
   margin: 20px auto; /* Center images and add margin */
-  max-width: 80%; /* Ensure images don't exceed container width */
+  max-width: 100%; /* Ensure images don't exceed container width */
   height: auto; /* Maintain aspect ratio */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for better visibility */
 }
 
 footer {
