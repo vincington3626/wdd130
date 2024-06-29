@@ -1,0 +1,231 @@
+/* Reset and general styling */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+#content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.main-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.blog-intro {
+    text-align: center;
+    padding: 20px;
+    background-color: #e3f2fd;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.blog-intro h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #0077b6;
+}
+
+.blog-intro h3 {
+    font-size: 24px;
+    color: #0077b6;
+}
+
+.blog-highlights,
+.wild-encounters {
+    margin-bottom: 30px;
+}
+
+.highlights-content,
+.encounters-content,
+.sheep-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.highlights-content img,
+.encounters-content img,
+.sheep-content img {
+    width: 80%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.highlights-content img:hover,
+.encounters-content img:hover,
+.sheep-content img:hover {
+    transform: scale(1.05);
+}
+
+.wild-encounters h2 {
+    font-size: 28px;
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+.wild-encounters h3 {
+    font-size: 22px;
+    color: #004d7a;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 900px) {
+    .highlights-content,
+    .encounters-content,
+    .sheep-content {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .highlights-content img,
+    .encounters-content img,
+    .sheep-content img {
+        width: 100%;
+    }
+}
+
+/* Footer specific styles */
+#site-footer {
+    background-color: #6f7364;
+    padding: 25px 50px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+#site-footer p,
+#site-footer a {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.social {
+    display: flex;
+    gap: 15px;
+}
+
+.social a img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Header specific styles */
+#site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(20, 30, 13, 0.7);
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+#logo_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #004d7a;
+}
+
+/* Header specific styles */
+#site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(20, 30, 13, 0.8);
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    background-color: #004d7a;
+    transform: scale(1.1);
+}
+
+nav a.active {
+    background-color: #0077b6;
+}
+
+#logo_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 900px) {
+    #site-header {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
