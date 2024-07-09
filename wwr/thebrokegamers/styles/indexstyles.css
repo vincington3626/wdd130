@@ -1,6 +1,7 @@
 /* Importing fonts */
 @import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Setting root variables */
 :root {
   --primary-color: #D9984A;
   --secondary-color: #BF843B;
@@ -30,7 +31,6 @@ header {
   background-color: var(--accent1-color);
   color: var(--headline-color-on-color);
   padding: 1em;
-  text-align: center;
 }
 
 .nav-container {
@@ -87,6 +87,7 @@ p {
   margin-bottom: 20px;
 }
 
+/* Styles for images */
 .welcome-section img {
   display: block;
   margin: 20px auto;
@@ -99,12 +100,24 @@ p {
 footer {
   background-color: var(--accent1-color);
   color: var(--headline-color-on-color);
-  text-align: center;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-center {
+  text-align: center;
 }
 
 .social {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .social a {
@@ -138,6 +151,19 @@ footer {
   .social a {
     display: block;
     margin: 10px auto;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left {
+    align-items: center;
+  }
+
+  .footer-center {
+    margin-top: 20px;
   }
 }
 
@@ -196,4 +222,53 @@ footer {
 
 .image-overlay.right-slide:hover .overlay {
   transform: translateX(0);
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--accent1-color);
+  color: var(--headline-color-on-color);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items vertically within footer-left */
+}
+
+.footer-left p {
+  margin: 0;
+}
+
+.footer-center {
+  text-align: center;
+  flex-grow: 1; /* Takes remaining space */
+}
+
+.social {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end; /* Aligns social links to the right */
+  flex-grow: 1; /* Takes remaining space */
+}
+
+.social a {
+  margin: 0 10px;
+}
+
+.social img {
+  width: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-left, .footer-center, .social {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
 }
