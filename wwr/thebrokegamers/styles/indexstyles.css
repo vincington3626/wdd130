@@ -18,7 +18,6 @@
   --paragraph-background-color: #FFFFFF;
 }
 
-/* General styles */
 body {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color-on-white);
@@ -37,7 +36,6 @@ header {
 
 .logo {
   width: 100px;
-  /* Adjust size as needed */
 }
 
 nav {
@@ -83,15 +81,10 @@ p {
 .welcome-section img {
   display: block;
   margin: 20px auto;
-  /* Center images and add margin */
   max-width: 80%;
-  /* Ensure images don't exceed container width */
   height: auto;
-  /* Maintain aspect ratio */
   border-radius: 10px;
-  /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  /* Add a shadow for better visibility */
 }
 
 footer {
@@ -111,7 +104,6 @@ footer {
 
 .social img {
   width: 40px;
-  /* Adjust size as needed */
 }
 
 /* Responsive Design */
@@ -131,27 +123,21 @@ footer {
   }
 }
 
-/* Define CSS variable for overlay color */
 :root {
   --overlay-color: var(--headline-color-on-color);
-  /* Your headline color */
 }
 
-/* General styles for image containers */
 .image-container {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
 
-/* Styles for each image overlay container */
 .image-overlay {
   position: relative;
   overflow: hidden;
   width: calc(50% - 10px);
-  /* Adjusted width for each image container with margin */
   margin-bottom: 20px;
-  /* Added margin for spacing between images */
 }
 
 .image-overlay img {
@@ -161,7 +147,6 @@ footer {
   transition: transform 0.3s ease;
 }
 
-/* Overlay styles */
 .overlay {
   position: absolute;
   top: 0;
@@ -169,40 +154,28 @@ footer {
   right: 0;
   bottom: 0;
   background-color: var(--overlay-color);
-  /* Solid overlay color */
   opacity: 0.8;
-  /* Adjust opacity as needed */
   overflow: hidden;
   width: 100%;
-  /* Match the width of the parent */
   height: 100%;
-  /* Match the height of the parent */
   transition: transform 0.5s ease;
-  /* Smooth slide transition */
   transform: translateX(-100%);
-  /* Start off-screen to the left */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Text inside the overlay */
 .text {
   color: black;
   font-size: 20px;
   font-weight: bold;
-  /* Make the font thicker */
   white-space: nowrap;
 }
 
-/* Hover effect for sliding in from the left */
 .image-overlay.left-slide:hover .overlay {
   transform: translateX(0);
-  /* Slide in from the left */
 }
 
-/* Hover effect for sliding in from the right */
 .image-overlay.right-slide:hover .overlay {
   transform: translateX(0);
-  /* Slide in from the right */
 }
