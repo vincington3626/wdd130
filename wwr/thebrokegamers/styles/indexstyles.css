@@ -1,7 +1,6 @@
 /* Importing fonts */
 @import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Setting root variables */
 :root {
   --primary-color: #D9984A;
   --secondary-color: #BF843B;
@@ -34,19 +33,30 @@ header {
   text-align: center;
 }
 
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .logo {
   width: 100px;
 }
 
 nav {
-  text-align: center;
-  margin-top: 10px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
 }
 
 nav a {
   color: var(--headline-color-on-color);
   text-decoration: none;
-  margin: 0 10px;
   padding: 5px 10px;
   font-size: 18px;
 }
@@ -77,7 +87,6 @@ p {
   margin-bottom: 20px;
 }
 
-/* Styles for images */
 .welcome-section img {
   display: block;
   margin: 20px auto;
@@ -108,12 +117,21 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+  }
+
   nav {
-    display: block;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
   }
 
   nav a {
-    display: block;
     margin: 5px 0;
   }
 
