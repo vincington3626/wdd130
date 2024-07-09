@@ -7,10 +7,10 @@
   --secondary-color: #BF843B;
   --accent1-color: #593F1E;
   --accent2-color: #0D0D0D;
-  
+
   --heading-font: "Jersey 25";
   --paragraph-font: "Noto Serif Display", serif, sans-serif;
-  
+
   --headline-color-on-white: #593F1E;
   --headline-color-on-color: #D9984A;
   --paragraph-color-on-white: #8b6432;
@@ -36,7 +36,8 @@ header {
 }
 
 .logo {
-  width: 100px; /* Adjust size as needed */
+  width: 100px;
+  /* Adjust size as needed */
 }
 
 nav {
@@ -130,7 +131,8 @@ footer {
 }
 
 .social img {
-  width: 40px; /* Adjust size as needed */
+  width: 40px;
+  /* Adjust size as needed */
 }
 
 /* Responsive Design */
@@ -138,12 +140,12 @@ footer {
   nav {
     display: block;
   }
-  
+
   nav a {
     display: block;
     margin: 5px 0;
   }
-  
+
   .social a {
     display: block;
     margin: 10px auto;
