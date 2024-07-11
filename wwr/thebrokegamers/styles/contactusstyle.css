@@ -11,9 +11,9 @@
   --heading-font: "Jersey 25";
   --paragraph-font: "Noto Serif Display", serif, sans-serif;
 
-  --headline-color-on-white: #593F1E;
+  --headline-color-on-white: #D1AE80;
   --headline-color-on-color: #D9984A;
-  --paragraph-color-on-white: #8b6432;
+  --paragraph-color-on-white: #D1AE80;
   --paragraph-color-on-color: #D9984A;
   --paragraph-background-color: #FFFFFF;
 }
@@ -21,7 +21,7 @@
 /* General styles */
 body {
   font-family: var(--paragraph-font);
-  color: var(--paragraph-color-on-white);
+  color: var(--accent1-color);
   background-color: var(--accent2-color);
   line-height: 1.6;
   margin: 0;
@@ -105,6 +105,7 @@ textarea {
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  
 }
 
 textarea {
@@ -167,6 +168,10 @@ footer {
 
 .social img {
   width: 40px;
+}
+
+.lol {
+  color: var(--paragraph-color-on-white);
 }
 
 /* Responsive Design */
