@@ -1,7 +1,7 @@
 /* Importing fonts */
 @import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Setting root variables */
+/* Root variables */
 :root {
   --primary-color: #D9984A;
   --secondary-color: #BF843B;
@@ -18,6 +18,7 @@
   --paragraph-background-color: #FFFFFF;
 }
 
+/* Global styles */
 body {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color-on-white);
@@ -66,7 +67,6 @@ nav a:hover {
   color: black;
   background-color: var(--headline-color-on-color);
 }
-
 
 main {
   padding: 20px;
@@ -151,47 +151,148 @@ footer a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-
-  .footer-left,
-  .footer-center,
-  .social {
-    text-align: center;
-    justify-content: center;
-    width: 100%;
+  .nav-container {
+    flex-direction: column;
   }
-}
 
-.about-image {
-  display: block;
-  margin: 20px auto;
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.shop-image {
-  display: block;
-  margin: 20px auto;
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
   nav {
-    display: block;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
   }
 
   nav a {
-    display: block;
     margin: 5px 0;
   }
 
   .social a {
     display: block;
     margin: 10px auto;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left {
+    align-items: center;
+  }
+
+  .footer-center {
+    margin-top: 20px;
+  }
+}
+
+/* About Us Section */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-image {
+  flex-basis: 30%;
+  max-width: 200px;
+  margin: 20px auto;
+}
+
+.about-image img {
+  display: block;
+  width: 140%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+  font-size: 28px;
+  /* Increase font size for the About Us title */
+  text-align: center;
+}
+
+.about-section h3 {
+  font-size: 22px;
+  /* Increase font size for the section headings */
+  text-align: left;
+  /* Align left for all h3 except "About Us" */
+}
+
+/* Shop Section */
+.shop-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.shop-image {
+  flex-basis: 30%;
+  /* Adjust flex basis to allocate space */
+  max-width: 20%;
+  /* Set maximum width for the image */
+}
+
+.shop-image img {
+  display: block;
+  width: 100%;
+  /* Make image responsive */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shop-text {
+  flex: 1;
+  /* Take up remaining space */
+  margin-left: 20px;
+  /* Add margin for spacing between image and text */
+}
+
+.shop-section h2 {
+  font-size: 28px;
+  /* Keep consistent font size for the Shop title */
+  text-align: center;
+  /* Center align the title */
+}
+
+.shop-section h3 {
+  font-size: 22px;
+  /* Keep consistent font size for section headings */
+  text-align: left;
+  /* Align left for all h3 headings */
+}
+
+@media (max-width: 768px) {
+  .shop-section {
+    flex-direction: column;
+    /* Stack items vertically on smaller screens */
+    align-items: center;
+    /* Center align items on smaller screens */
+  }
+
+  .shop-image {
+    flex-basis: 90%;
+    /* Full width for image on smaller screens */
+    max-width: 90%;
+    /* Set maximum width for image on smaller screens */
+    margin-bottom: 20px;
+    /* Add margin below image on smaller screens */
+    margin-right: 0;
+    /* Remove right margin on smaller screens */
+  }
+
+  .shop-text {
+    max-width: 100%;
+    /* Full width for text on smaller screens */
+    margin-left: 0;
+    /* Remove left margin on smaller screens */
   }
 }
