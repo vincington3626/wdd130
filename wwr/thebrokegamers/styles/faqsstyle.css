@@ -165,7 +165,7 @@ p {
   font-family: var(--heading-font);
 }
 
-.text-content button {
+/* .text-content button {
   border: none;
   outline: 0;
   display: inline-block;
@@ -181,8 +181,25 @@ p {
 
 .text-content button:hover {
   background-color: var(--secondary-color);
+} */
+
+.ask-here-button {
+  background-color: var(--primary-color);
+  color: black;
+  padding: 12px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  font-family: var(--paragraph-font);
+  transition: background-color 0.3s;
 }
 
+.ask-here-button:hover {
+  background-color: var(--secondary-color);
+}
 
 footer {
   background-color: var(--accent1-color);
